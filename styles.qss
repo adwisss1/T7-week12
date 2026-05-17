@@ -1,0 +1,221 @@
+/* styles.qss — Light theme untuk Dashboard PySide6 */
+
+/* ── Global ── */
+QWidget {
+    background-color: #ffffff; /* Background utama putih */
+    color: #1e1e2e;            /* Teks utama gelap */
+    font-family: "Segoe UI", "Inter", sans-serif;
+    font-size: 13px;
+}
+
+QMainWindow {
+    background-color: #f5f5f7; /* Background jendela luar abu-abu sangat terang */
+}
+
+/* ── Header ── */
+QLabel#header {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1a73e8;            /* Biru aksen terang */
+    padding: 6px 0;
+}
+
+QLabel#panelTitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1a73e8;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* ── Summary cards ── */
+QFrame#summaryCard {
+    background-color: #f8f9fa; /* Kartu abu-abu terang */
+    border-radius: 8px;
+    border: 1px solid #dadce0;
+}
+
+QLabel#cardTitle {
+    color: #5f6368;            /* Teks judul kartu abu-abu gelap */
+    font-size: 11px;
+}
+
+QLabel#cardValue {
+    color: #1a73e8;            /* Angka kartu biru */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ── ComboBox ── */
+QComboBox {
+    background-color: #ffffff;
+    border: 1px solid #dadce0;
+    border-radius: 6px;
+    padding: 4px 10px;
+    color: #1e1e2e;
+}
+
+QComboBox::drop-down {
+    border: none;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #ffffff;
+    selection-background-color: #1a73e8;
+    selection-color: #ffffff;
+    border: 1px solid #dadce0;
+}
+
+/* ── Buttons ── */
+QPushButton {
+    background-color: #f1f3f4;
+    color: #1e1e2e;
+    border: 1px solid #dadce0;
+    border-radius: 6px;
+    padding: 5px 14px;
+    font-size: 12px;
+}
+
+QPushButton:hover {
+    background-color: #e8eaed;
+}
+
+QPushButton:pressed {
+    background-color: #d2d4d7;
+}
+
+QPushButton#btnAdd {
+    background-color: #34a853; /* Hijau terang */
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+}
+
+QPushButton#btnAdd:hover {
+    background-color: #2d9247;
+}
+
+QPushButton#btnEdit {
+    background-color: #fbbc05; /* Oranye/Kuning terang */
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+}
+
+QPushButton#btnEdit:hover {
+    background-color: #e5ab04;
+}
+
+QPushButton#btnDelete {
+    background-color: #ea4335; /* Merah terang */
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+}
+
+QPushButton#btnDelete:hover {
+    background-color: #d33c2f;
+}
+
+QPushButton#btnRefresh {
+    background-color: #1a73e8; /* Biru terang */
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+}
+
+QPushButton#btnRefresh:hover {
+    background-color: #155cb4;
+}
+
+QPushButton#btnExport {
+    background-color: #faf0d7; /* Krem terang */
+    color: #614e1a;
+    font-weight: bold;
+    border: 1px solid #e6d3a8;
+}
+
+QPushButton#btnExport:hover {
+    background-color: #ebdcb2;
+}
+
+/* ── Table ── */
+QTableWidget {
+    background-color: #ffffff;
+    alternate-background-color: #f8f9fa; /* Baris selang-seling */
+    gridline-color: #e0e0e0;
+    selection-background-color: #1a73e8;
+    selection-color: #ffffff;
+    border: 1px solid #dadce0;
+    border-radius: 6px;
+}
+
+QTableWidget::item {
+    padding: 4px;
+}
+
+QHeaderView::section {
+    background-color: #f1f3f4;
+    color: #1a73e8;
+    padding: 6px;
+    border: none;
+    border-right: 1px solid #dadce0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* ── Scrollbar ── */
+QScrollBar:vertical {
+    background: #f1f3f4;
+    width: 8px;
+}
+
+QScrollBar::handle:vertical {
+    background: #dadce0;
+    border-radius: 4px;
+    min-height: 20px;
+}
+
+/* ── Splitter ── */
+QSplitter::handle {
+    background-color: #dadce0;
+    width: 3px;
+}
+
+/* ── Status bar ── */
+QStatusBar {
+    background-color: #f5f5f7;
+    color: #5f6368;
+    font-size: 11px;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* ── Dialog ── */
+QDialog {
+    background-color: #ffffff;
+}
+
+QFormLayout QLabel {
+    color: #1e1e2e;
+}
+
+QLineEdit, QSpinBox, QDoubleSpinBox {
+    background-color: #ffffff;
+    border: 1px solid #dadce0;
+    border-radius: 6px;
+    padding: 4px 8px;
+    color: #1e1e2e;
+}
+
+QLineEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus {
+    border: 1px solid #1a73e8;
+}
+
+QDialogButtonBox QPushButton {
+    min-width: 80px;
+}
+
+/* ── Message box ── */
+QMessageBox {
+    background-color: #ffffff;
+}
